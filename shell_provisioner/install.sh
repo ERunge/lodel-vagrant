@@ -66,6 +66,7 @@ sudo service apache2 restart
 
 echo "::::: Git clone Lodel :::::"
 cd /var/www
+rm lodel/.gitignore
 git clone --progress https://github.com/OpenEdition/lodel
 
 
