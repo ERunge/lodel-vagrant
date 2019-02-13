@@ -55,6 +55,8 @@ CREATE DATABASE lodel;
 GRANT ALL PRIVILEGES ON *.* TO 'lodel'@'localhost';
 FLUSH PRIVILEGES;
 quit"
+
+sudo sh -c "echo '[mysqld]"
 sudo sh -c "echo 'max_allowed_packet=16M' >> /etc/mysql/my.cnf"
 sudo sh -c "echo 'key_buffer_size=16M' >> /etc/mysql/my.cnf"
 sudo service mysql restart
